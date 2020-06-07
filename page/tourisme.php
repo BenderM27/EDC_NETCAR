@@ -14,7 +14,7 @@
     $_SESSION['categ'] = 'Tourisme';
     ?> 
     
-    <h2>Agence : <?php echo $_SESSION['agence'].$_SESSION['id_agence_dep']; ?></h2>
+    <h2>Agence : <?php echo $_SESSION['agence']; ?></h2>
     <h2>Catégorie : Tourisme</h2>
     <h1> Voici les véhicule de tourisme disponible </h1>
     <?php

@@ -15,7 +15,7 @@
     $_SESSION['le_vehicule'] = $_POST['le_vehicule'];
     $_SESSION['id_vehicule'] = $_POST['id_vehicule'];
     ?>
-    <h2>Agence : <?php echo $_SESSION['agence'].$_SESSION['id_agence_dep']; ?></h2>
+    <h2>Agence : <?php echo $_SESSION['agence']; ?></h2>
     <h2>Catégorie : <?php echo $_SESSION['categ']; ?></h2>
     <h2>Véhicule : <?php echo $_SESSION['le_vehicule']; ?></h2>
     <h1> Réservation de véhicule </h1>
@@ -33,7 +33,7 @@
             while ($row = mysqli_fetch_array($result)) {
         ?>
 
-            <option value="<?php echo $row['ville']; ?>" name="id_agence_arriv" id="id_agence_arriv"><?php echo $row['ville']; ?></option>
+            <option value="<?php echo $row['id']; ?>" name="id_agence_arriv" id="id_agence_arriv"><?php echo $row['ville']; ?></option>
             <?php } }?>
         </select><br /><br />
         <input type="submit" value="Voir mon devis">
