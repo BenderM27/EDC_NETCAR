@@ -1,0 +1,1 @@
+ERREUR SQL : 3 Jun 2020 - 22:08:55.000000 --> SELECT ID FROM agence where ville = ; : (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1) 
