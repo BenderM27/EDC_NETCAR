@@ -27,9 +27,12 @@
     $delivrance_permis = $_POST['delivrance_permis'];
     $mode_payement = $_POST['mode_payement'];
     
+    $insert_devis = "insert into devis(civilite, nom, prenom, rue, cp, ville, telephone, mail, payement) values('$civilite','$nom','$prenom','$adresse',$cp,'$ville',$telephone,'$mail','$mode_payement')";
     
+    $result = executeSQL($insert_devis);
     
+
     
     ?>
 
-    <h1>Bravo ! Votre devis est complet </h1>
+    <h1>Bravo ! Votre devis est complet <?php echo $civilite.'.'.$nom;?>.</h1>
